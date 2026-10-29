@@ -1,0 +1,25 @@
+{
+  "name": "video",
+  "version": "1.0.0",
+  "description": "Video toolchain: HyperFrames, Remotion, FFmpeg",
+  "scripts": {
+    "setup": "scripts/setup.sh",
+    "verify": "scripts/verify.sh",
+    "hf:preview": "cd demo-hyperframes && hyperframes preview",
+    "hf:render": "cd demo-hyperframes && hyperframes render",
+    "remotion:studio": "remotion studio remotion/src/index.ts",
+    "remotion:render": "scripts/remotion-render.sh"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@remotion/renderer": "^4.0.539",
+    "@types/react": "^19.3.0",
+    "gsap": "^3.14.2",
+    "hyperframes": "^0.8.216",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
